@@ -12,7 +12,7 @@ export function BodyNeedsInteractive() {
   const activeNeed = BODY_NEEDS_DATA.find((n) => n.id === selectedId) || BODY_NEEDS_DATA[0];
 
   return (
-    <section className="py-24 bg-brand-dark relative border-b border-white/10">
+    <section id="quiz" className="py-24 bg-brand-dark relative border-b border-white/10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}

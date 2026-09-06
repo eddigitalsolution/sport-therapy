@@ -14,7 +14,7 @@ export function BodyRecoveryMap() {
   const [selectedPart, setSelectedPart] = useState<BodyPartItem>(BODY_PARTS_DATA[3]);
 
   return (
-    <section className="py-24 bg-brand-dark relative border-b border-white/10 overflow-hidden bg-tech-dots">
+    <section id="body-map" className="py-24 bg-brand-dark relative border-b border-white/10 overflow-hidden bg-tech-dots">
       <div className="absolute top-1/3 right-10 w-96 h-96 bg-brand-red/15 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

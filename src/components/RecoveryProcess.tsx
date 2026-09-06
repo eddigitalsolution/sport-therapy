@@ -34,7 +34,7 @@ export function RecoveryProcess() {
   ];
 
   return (
-    <section className="py-24 bg-brand-dark relative border-b border-white/10 overflow-hidden bg-tech-grid">
+    <section id="process" className="py-24 bg-brand-dark relative border-b border-white/10 overflow-hidden bg-tech-grid">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

@@ -21,6 +21,7 @@ export function Hero() {
 
   return (
     <section
+      id="hero"
       onMouseMove={handleMouseMove}
       className="relative min-h-screen pt-28 pb-16 lg:pt-36 lg:pb-24 bg-brand-dark overflow-hidden flex items-center bg-tech-grid"
     >
