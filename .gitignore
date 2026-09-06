@@ -1,0 +1,26 @@
+# dependencies
+/node_modules
+/.pnpm
+/.yarn
+
+# next.js build output
+/.next/
+/out/
+/.open-next/
+
+# production / cloudflare
+/dist/
+/.wrangler/
+
+# env files
+.env
+.env*.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+node_modules
