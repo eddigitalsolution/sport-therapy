@@ -36,6 +36,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth">
+      <head>
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self' https: data: blob: 'unsafe-inline'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' https: data:; connect-src 'self' https: wss:;"
+        />
+      </head>
       <body className="bg-brand-dark text-white font-sans antialiased selection:bg-brand-red selection:text-white">
         <SmoothScroll>
           <CustomCursor />
