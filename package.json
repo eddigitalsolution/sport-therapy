@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "pages:build": "npx @opennextjs/cloudflare",
+    "cf:install": "npm install --prefer-offline",
+    "cf:deploy": "npm run cf:install && npm run pages:build",
     "preview": "npm run pages:build && wrangler dev",
     "deploy": "npm run pages:build && wrangler deploy"
   },
