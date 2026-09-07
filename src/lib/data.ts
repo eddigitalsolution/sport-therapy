@@ -274,7 +274,7 @@ export const FAQ_DATA = [
   {
     question: "Who is the service for?",
     answer:
-      "RE:MK Performance provides female-only sports massage and recovery services specifically tailored for active women and athletes of all levels (football, futsal, badminton, running, gym, CrossFit, etc.).",
+      "PEAK Performance provides female-only sports massage and recovery services specifically tailored for active women and athletes of all levels (football, futsal, badminton, running, gym, CrossFit, etc.).",
   },
   {
     question: "What should I choose for my first session?",
@@ -287,9 +287,9 @@ export const FAQ_DATA = [
       "All bookings are handled directly through WhatsApp with Sofea. Click any 'BOOK YOUR SESSION' button on this website to launch WhatsApp with your pre-filled service request.",
   },
   {
-    question: "Is the service female-only?",
+    question: "Is the studio strictly female-only?",
     answer:
-      "Yes. RE:MK Performance is strictly a female-only sports recovery studio operated by Sofea for female clients.",
+      "Yes. PEAK Performance is strictly a female-only sports recovery studio operated by Sofea for female clients.",
   },
   {
     question: "How much does each service cost?",

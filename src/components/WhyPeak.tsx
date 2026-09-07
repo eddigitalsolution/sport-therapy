@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Zap } from "lucide-react";
 
-export function WhyRemk() {
+export function WhyPeak() {
   const points = [
     {
       num: "01",

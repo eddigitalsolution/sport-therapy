@@ -6,7 +6,7 @@ import { SportsGrid } from "@/components/SportsGrid";
 import { BodyNeedsInteractive } from "@/components/BodyNeedsInteractive";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { BodyRecoveryMap } from "@/components/BodyRecoveryMap";
-import { WhyRemk } from "@/components/WhyRemk";
+import { WhyPeak } from "@/components/WhyPeak";
 import { RecoveryProcess } from "@/components/RecoveryProcess";
 import { PhotoBanner } from "@/components/PhotoBanner";
 import { FAQ } from "@/components/FAQ";
@@ -24,7 +24,7 @@ export default function Home() {
       <BodyNeedsInteractive />
       <ServicesGrid />
       <BodyRecoveryMap />
-      <WhyRemk />
+      <WhyPeak />
       <RecoveryProcess />
       <PhotoBanner />
       <FAQ />

@@ -19,7 +19,7 @@ export function RecoveryProcess() {
     {
       num: "03",
       step: "RECOVER",
-      desc: "Targeted RE:MK sports massage flushes toxins and releases deep knots.",
+      desc: "Targeted PEAK sports massage flushes toxins and releases deep knots.",
     },
     {
       num: "04",

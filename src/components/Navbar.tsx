@@ -19,7 +19,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: "SERVICES", href: "#services" },
-    { name: "WHY RE:MK", href: "#why-us" },
+    { name: "WHY PEAK", href: "#why-us" },
     { name: "FOR ATHLETES", href: "#athletes" },
     { name: "FAQ", href: "#faq" },
   ];

@@ -116,7 +116,7 @@ export function NotASpaSection() {
             
             <div className="mt-8 pt-4 border-t border-white/20 flex items-center justify-between font-tech text-xs text-brand-yellow font-bold uppercase tracking-wider relative z-10">
               <span>SOLVE • ENHANCE • DOMINATE</span>
-              <span>RE:MK</span>
+              <span>PEAK</span>
             </div>
           </motion.div>
         </div>

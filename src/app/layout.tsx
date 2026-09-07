@@ -5,7 +5,7 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 import { FloatingWhatsAppCTA } from "@/components/FloatingWhatsAppCTA";
 
 export const metadata: Metadata = {
-  title: "RE:MK Performance | Sports Massage for Female Athletes",
+  title: "PEAK Performance | Sports Massage for Female Athletes",
   description:
     "Female-only sports massage and recovery services designed to support athletic performance, mobility, and physical readiness. Solve. Enhance. Dominate.",
   keywords: [
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     "Dry Cupping",
     "Football Recovery",
     "Badminton Recovery",
-    "Sofea RE:MK",
+    "Sofea PEAK",
   ],
-  authors: [{ name: "RE:MK Performance" }],
+  authors: [{ name: "PEAK Performance" }],
   openGraph: {
-    title: "RE:MK Performance | Sports Massage for Female Athletes",
+    title: "PEAK Performance | Sports Massage for Female Athletes",
     description:
       "Recovery designed for women who train hard, compete harder, and refuse to perform at 80%.",
     type: "website",

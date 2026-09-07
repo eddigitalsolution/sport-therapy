@@ -64,7 +64,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#why-us" className="hover:text-brand-yellow transition-colors">
-                  WHY RE:MK
+                  WHY PEAK
                 </a>
               </li>
               <li>

@@ -1,6 +1,6 @@
-# REMK Sports Therapy & Performance Recovery ⚡
+# PEAK Sports Therapy & Performance Recovery ⚡
 
-An elite, high-performance web application built for **REMK Sports Therapy** — a specialized athletic recovery and sports therapy hub designed specifically for athletes, hybrid trainers, powerlifters, runners, and active individuals.
+An elite, high-performance web application built for **PEAK Sports Therapy** — a specialized athletic recovery and sports therapy hub designed specifically for athletes, hybrid trainers, powerlifters, runners, and active individuals.
 
 > **"NOT A SPA. THIS IS ATHLETIC RECOVERY & PERFORMANCE REHAB."**
 
@@ -8,12 +8,12 @@ An elite, high-performance web application built for **REMK Sports Therapy** —
 
 ## 🌟 Highlights & Features
 
-- **Interactive Human Body Recovery Map**: 3D-styled interactive anatomical model letting athletes pinpoint target areas (Shoulders, Lower Back, Knees, Hamstrings, Ankles, Hips) to reveal specialized treatment protocols.
-- **Interactive Body Needs Quiz**: Step-by-step diagnostic questionnaire tailored for specific pain points and recovery goals.
-- **Sport-Specific Recovery Guides**: Tailored modalities for Runners, Powerlifters, Crossfit Athletes, Fighters, and Endurance competitors.
-- **High-Impact UI & Aesthetics**: Dark mode luxury sports aesthetic featuring dark zinc tones, electric hyper-lime accent highlights (`#CCFF00`), smooth custom cursor dynamics, micro-interactions, and Lenis smooth scrolling.
-- **Instant WhatsApp Booking Engine**: Direct single-tap booking flow pre-filling athlete intent, location preference, and target body area.
-- **Mobile-First & Ultra Responsive**: Tailored layout scaling seamlessly across high-res desktop screens, tablets, and mobile devices.
+- **Female-Only Recovery Focus**: Tailored recovery environment led by certified recovery specialist Sofea.
+- **Interactive Body Recovery Map**: Visual muscle group selector (Quads, Hamstrings, Lower Back, Shoulders/Neck, Calves) with instant treatment & recovery protocol suggestions.
+- **Structured Service Catalog**: Clear offerings including Sports Recovery Massage, Soft Tissue Mobilization, PNF Stretching, and Sports Taping.
+- **Instant WhatsApp Integration**: One-click direct booking with pre-filled service inquiry parameters.
+- **Interactive Athlete Readiness Quiz**: Self-assessment tool to recommend optimal recovery protocols based on current fatigue & training volume.
+- **Dark Athletic-Tech UI**: Cyber-industrial design aesthetic featuring neon red/yellow accents, micro-interactions, and glassmorphism.
 
 ---
 
@@ -37,7 +37,7 @@ For developers, designers, or AI assistants recreating or extending this aesthet
 ### 🎯 Design System Prompt Specification
 
 ```text
-Create a high-impact, luxury athletic-tech web application for REMK Sports Therapy.
+Create a high-impact, luxury athletic-tech web application for PEAK Sports Therapy.
 
 [Visual Aesthetic & Tone]
 - Mood: High performance, dark mode, clinical precision meets elite athletic energy.
