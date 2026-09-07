@@ -1,0 +1,17 @@
+{
+  "name": "PEAK Performance | Sports Massage & Female Athlete Recovery",
+  "short_name": "PEAK Performance",
+  "description": "Female-only sports massage and recovery services designed to support athletic performance, mobility, and physical readiness. Solve. Enhance. Dominate.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0C10",
+  "theme_color": "#0B0C10",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
