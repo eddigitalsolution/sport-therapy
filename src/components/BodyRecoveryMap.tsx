@@ -174,40 +174,78 @@ export function BodyRecoveryMap() {
                   return (
                     <g
                       key={part.id}
-                      className="cursor-pointer"
+                      className="cursor-pointer group"
                       onClick={() => setSelectedPart(part)}
                       role="button"
                       aria-label={`Select ${part.name}`}
                     >
-                      {/* Ping ring (active only) */}
+                      {/* Smooth Radar Scan Pulse (Active Only) */}
                       {isActive && (
-                        <circle
-                          cx={cx}
-                          cy={cy}
-                          r="14"
-                          fill="rgba(255,30,39,0.2)"
-                          stroke="#FF1E27"
-                          strokeWidth="1"
-                          className="animate-ping"
-                        />
+                        <>
+                          {/* Outer Ripple 1 */}
+                          <motion.circle
+                            cx={cx}
+                            cy={cy}
+                            r="16"
+                            fill="none"
+                            stroke="#FF1E27"
+                            strokeWidth="1.5"
+                            initial={{ scale: 0.6, opacity: 0.8 }}
+                            animate={{ scale: 1.8, opacity: 0 }}
+                            transition={{
+                              duration: 1.8,
+                              repeat: Infinity,
+                              ease: "easeOut",
+                            }}
+                            style={{ transformOrigin: `${cx}px ${cy}px` }}
+                          />
+                          {/* Outer Ripple 2 (Delayed) */}
+                          <motion.circle
+                            cx={cx}
+                            cy={cy}
+                            r="16"
+                            fill="none"
+                            stroke="#FF1E27"
+                            strokeWidth="1"
+                            initial={{ scale: 0.6, opacity: 0.8 }}
+                            animate={{ scale: 1.8, opacity: 0 }}
+                            transition={{
+                              duration: 1.8,
+                              repeat: Infinity,
+                              delay: 0.6,
+                              ease: "easeOut",
+                            }}
+                            style={{ transformOrigin: `${cx}px ${cy}px` }}
+                          />
+                          {/* Glow Aura */}
+                          <circle
+                            cx={cx}
+                            cy={cy}
+                            r="12"
+                            fill="rgba(255, 30, 39, 0.25)"
+                            className="filter blur-[2px]"
+                          />
+                        </>
                       )}
-                      {/* Outer ring */}
+
+                      {/* Outer Ring */}
                       <circle
                         cx={cx}
                         cy={cy}
-                        r={isActive ? 10 : 7}
-                        fill={isActive ? "rgba(255,30,39,0.35)" : "rgba(255,215,0,0.25)"}
+                        r={isActive ? 9 : 7}
+                        fill={isActive ? "rgba(255,30,39,0.3)" : "rgba(255,215,0,0.15)"}
                         stroke={isActive ? "#FF1E27" : "#FFD700"}
-                        strokeWidth="1.5"
-                        style={{ transition: "all 0.25s ease" }}
+                        strokeWidth={isActive ? "2" : "1.5"}
+                        style={{ transition: "all 0.3s ease" }}
                       />
-                      {/* Inner dot */}
+
+                      {/* Inner Target Core */}
                       <circle
                         cx={cx}
                         cy={cy}
-                        r={isActive ? 5 : 3.5}
+                        r={isActive ? 4.5 : 3}
                         fill={isActive ? "#FF1E27" : "#FFD700"}
-                        style={{ transition: "all 0.25s ease" }}
+                        style={{ transition: "all 0.3s ease" }}
                       />
                     </g>
                   );
