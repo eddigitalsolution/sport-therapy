@@ -40,19 +40,31 @@ export function BodyRecoveryMap() {
 
             {/* Quick Buttons — mobile top, desktop below silhouette */}
             <div className="flex flex-wrap justify-center gap-2 lg:order-2">
-              {BODY_PARTS_DATA.map((part) => (
-                <button
-                  key={part.id}
-                  onClick={() => setSelectedPart(part)}
-                  className={`px-3 py-1.5 rounded text-xs font-tech font-bold uppercase tracking-widest transition-all duration-200 ${
-                    selectedPart.id === part.id
-                      ? "bg-brand-red text-white shadow-lg"
-                      : "bg-white/5 text-gray-400 border border-white/10 hover:border-brand-yellow hover:text-white"
-                  }`}
-                >
-                  {part.name.split(" ")[0]}
-                </button>
-              ))}
+              {BODY_PARTS_DATA.map((part) => {
+                const isActive = selectedPart.id === part.id;
+                return (
+                  <motion.button
+                    key={part.id}
+                    onClick={() => setSelectedPart(part)}
+                    whileHover={{ scale: 1.04 }}
+                    whileTap={{ scale: 0.95 }}
+                    className={`relative px-3.5 py-2 rounded text-xs font-tech font-bold uppercase tracking-widest transition-colors duration-200 select-none ${
+                      isActive
+                        ? "text-white shadow-lg"
+                        : "bg-white/5 text-gray-400 border border-white/10 hover:border-brand-yellow hover:text-white"
+                    }`}
+                  >
+                    {isActive && (
+                      <motion.div
+                        layoutId="activeMapPartTab"
+                        className="absolute inset-0 bg-brand-red rounded shadow-[0_0_15px_rgba(255,30,39,0.5)]"
+                        transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                      />
+                    )}
+                    <span className="relative z-10">{part.name.split(" ")[0]}</span>
+                  </motion.button>
+                );
+              })}
             </div>
 
             {/* Silhouette Container */}
@@ -271,10 +283,10 @@ export function BodyRecoveryMap() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedPart.id}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
+                initial={{ opacity: 0, y: 12, scale: 0.98 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -12, scale: 0.98 }}
+                transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
                 className="bg-brand-card border border-white/15 rounded-xl p-8 shadow-[0_0_40px_rgba(0,0,0,0.8)] relative overflow-hidden"
               >
                 {/* Red top accent bar */}

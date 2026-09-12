@@ -33,18 +33,27 @@ export function BodyNeedsInteractive() {
           {BODY_NEEDS_DATA.map((need) => {
             const isSelected = need.id === selectedId;
             return (
-              <button
+              <motion.button
                 key={need.id}
                 onClick={() => setSelectedId(need.id)}
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.95 }}
                 data-cursor="SELECT"
-                className={`px-5 py-3 rounded font-tech text-xs sm:text-sm font-bold tracking-widest uppercase transition-all duration-300 ${
+                className={`relative px-5 py-3 rounded font-tech text-xs sm:text-sm font-bold tracking-widest uppercase transition-colors duration-200 select-none ${
                   isSelected
-                    ? "bg-brand-red text-white shadow-[0_0_20px_rgba(255,30,39,0.5)] border border-brand-red"
+                    ? "text-white shadow-[0_0_20px_rgba(255,30,39,0.5)] border border-brand-red"
                     : "bg-white/5 text-gray-300 border border-white/10 hover:bg-white/10 hover:text-brand-yellow"
                 }`}
               >
-                {need.label}
-              </button>
+                {isSelected && (
+                  <motion.div
+                    layoutId="activeNeedTab"
+                    className="absolute inset-0 bg-brand-red rounded"
+                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                  />
+                )}
+                <span className="relative z-10">{need.label}</span>
+              </motion.button>
             );
           })}
         </div>
