@@ -63,7 +63,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0B0C10" />
         <meta
           httpEquiv="Content-Security-Policy"
-          content="default-src 'self' https: data: blob: 'unsafe-inline'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' https: data:; connect-src 'self' https: wss:;"
+          content="default-src 'self' https: data: blob: 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' https: data:; connect-src 'self' https: wss:;"
         />
       </head>
       <body className="bg-brand-dark text-white font-sans antialiased selection:bg-brand-red selection:text-white">
